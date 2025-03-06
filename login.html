@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro GYM </title>
+
+    <style>
+
+    </style>
+
+</head>
+<body>
+    
+
+    <form>
+
+        <h3>Cadastro</h3>
+        <input type="tel" placeholder="telefone" id="telefone">
+        <input type="mail" placeholder="email" id="email">
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+
+    </form>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCu33gJt78S12XBl2R6RczeSh_772aalH8",
+          authDomain: "academia-6064a.firebaseapp.com",
+          databaseURL: "https://academia-6064a-default-rtdb.firebaseio.com",
+          projectId: "academia-6064a",
+          storageBucket: "academia-6064a.firebasestorage.app",
+          messagingSenderId: "74307889417",
+          appId: "1:74307889417:web:452e63279fdca235f74bd8",
+          measurementId: "G-L126KEG8DV"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+     
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "admin" && senha == "admin"){
+                alert('Sucesso');
+                location.href = "home.html";
+            }else{
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+    
+        VAR login = document.getElementByid ('login'). Value;
+        VAR senha = document.getElementByid ('senha'). Value;
+    
+        IF (login //! senha) {
+            Alert ("Prencha todos os campos");
+            return;
+        }
+
+        SET(ref(DB,'usuarios/' + login),{
+            login:login
+            senha:senha
+        })
+    
+    
+    
+    
+    
+    </script>
+
+</body>
+</html>
+
+//Function 
+//event.preventDefault ();
+//nao de pagina enquato forms NÃO FOR enviado
