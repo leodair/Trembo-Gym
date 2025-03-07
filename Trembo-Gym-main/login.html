@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" type="text/css" href="academia.css">
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,13 +49,40 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
-      </script>
+    
 
+        function salvarcadastro (event) {
+
+event.preventdefault();
+
+var login = document.getElementByid ('login'). Value;
+var senha = document.getElementByid ('senha'). Value;
+
+IF (login / senha); {
+alert ("Prencha todos os campos");
+return;
+}
+
+SET(ref(DB,'usuarios/' + login),{
+login:login,
+senha:senha
+})
+
+.THEN (() =>{
+alert("usuario cadastrado com sucesso!");
+location.href = "home.html";
+})
+.CATCH ((erros) =>{
+ console.erros ("erros ao salvar:", error);
+});
+}
+
+
+    </script>
 
     <script>
-
-
-        function logar(){
+ 
+    function logar(){
 
             var login = document.getElementById('login').value;
             var senha = document.getElementById('senha').value;
@@ -68,8 +95,9 @@
             }
 
         }
-
-    </script>
+    
+     </script>
+    
 
 </body>
 </html>
