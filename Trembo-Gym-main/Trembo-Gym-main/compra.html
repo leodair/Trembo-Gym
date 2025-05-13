@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="academia.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Academia Fit Life</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h2>Detalhes do Pagamento</h2>
+            
+            <div class="detalhes-plano">
+                <h3>Plano Selecionado: <span id="plano-nome">Plano Premium</span></h3>
+                <p>Preço: <span id="plano-preco">R$ 229,99</span></p>
+            </div>
+
+            <form class="form-pagamento">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" required placeholder="Digite seu endereço">
+
+                <label for="cartao">Número do Cartão</label>
+                <input type="text" id="cartao" name="cartao" required placeholder="Digite o número do cartão" maxlength="19">
+
+                <button type="submit">Finalizar Compra</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Academia Fit Life. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
