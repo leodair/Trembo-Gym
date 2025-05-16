@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
@@ -148,3 +149,155 @@ footer {
     font-size: 14px;
     width: 100%;
 }
+=======
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Navbar */
+navbar {
+    background-color: #222;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Header */
+header {
+    background-color: #538cc5;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+header .btn {
+    background-color: #f39c12;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header .btn:hover {
+    background-color: #e67e22;
+}
+
+/* Seções */
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Planos */
+.planos-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plano {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 30%;
+}
+
+.plano h3 {
+    color: #e67e22;
+}
+
+.plano ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plano ul li {
+    margin-bottom: 10px;
+}
+
+/* Galeria */
+.galeria-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.galeria-container img {
+    width: 30%;
+    border-radius: 8px;
+}
+
+/* Contato */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #538cc5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #538cc5;
+}
+
+footer {
+    background-color: #333; /* Cor de fundo da faixa */
+    color: white; /* Cor do texto */
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    width: 100%;
+}
+>>>>>>> fd37e5dcd4167ad2985725ceddd2a22d33fa5341
